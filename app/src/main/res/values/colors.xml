@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!--color on shape-->
+    <color name="colorBgButton">#3B49EE</color>
+    <color name="colorStrokeForm">#DCE2EE</color>
+
+    <!--color on font-->
+    <color name="colorFontForm">#DCE2EE</color>
 </resources>
