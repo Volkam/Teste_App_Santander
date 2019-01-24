@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ActivityUserInterface">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundInterface"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_name_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            tools:text="José da Silva Teste"
+            android:textSize="25sp"
+            android:textColor="@color/colorFontInterface"
+            app:layout_constraintEnd_toStartOf="@+id/iv_logout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_name_user"
+            app:srcCompat="@drawable/logout"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="@string/contentDescriptionImageLogout" />
+
+        <TextView
+            android:id="@+id/tv_account_fix"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/titleContaClient"
+            android:textSize="12sp"
+            android:textColor="@color/colorFontInterface"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_user" />
+
+        <TextView
+            android:id="@+id/tv_number_ag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            tools:text="2050"
+            android:textSize="25sp"
+            android:textColor="@color/colorFontInterface"
+            app:layout_constraintEnd_toStartOf="@+id/tv_bar_fix"
+            app:layout_constraintTop_toBottomOf="@+id/tv_account_fix" />
+
+        <TextView
+            android:id="@+id/tv_bar_fix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/barToSeparet"
+            android:textSize="25sp"
+            android:textColor="@color/colorFontInterface"
+            app:layout_constraintTop_toBottomOf="@+id/tv_account_fix"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="72dp" />
+
+        <TextView
+            android:id="@+id/tv_number_account"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_marginTop="6dp"
+            tools:text="01.111222-4"
+            android:textSize="25sp"
+            android:textColor="@color/colorFontInterface"
+            app:layout_constraintTop_toBottomOf="@+id/tv_account_fix"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="90dp" />
+
+        <TextView
+            android:id="@+id/tv_balance_fix"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/titleBalanceClient"
+            android:textSize="12sp"
+            android:textColor="@color/colorFontInterface"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_account_fix" />
+
+        <TextView
+            android:id="@+id/tv_balance_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="8dp"
+            tools:text="R$ 1.000,00"
+            android:textSize="25sp"
+            android:textColor="@color/colorFontInterface"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_balance_fix"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tv_title_recent_fix"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/titleRecyclerListOfRecents"
+            android:textColor="@color/colorFontInterface"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/rv_recents"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recents"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_recent_fix"
+            tools:listitem="@layout/layout_cell_recents"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

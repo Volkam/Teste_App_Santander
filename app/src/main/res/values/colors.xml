@@ -4,10 +4,20 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+     <!--color on background-->
+     <color name="colorBackground">#FFFFFF</color>
+
     <!--color on shape-->
     <color name="colorBgButton">#3B49EE</color>
     <color name="colorStrokeForm">#DCE2EE</color>
 
     <!--color on font-->
     <color name="colorFontForm">#DCE2EE</color>
+    <color name="colorFontInterface">#FFFFFF</color>
+    <color name="colorFontCellDown">#485465</color>
+    <color name="colorFontCellFix">#A8B4C4</color>
+
+    <!--color on background menu interface-->
+    <color name="colorBackgroundInterface">#3B49EE</color>
+
 </resources>

@@ -3,4 +3,9 @@
     <string name="acessUserLoginForm">User</string>
     <string name="acessUserPassForm">Password</string>
     <string name="TextAcessLogin">Login</string>
+    <string name="titleContaClient">Conta</string>
+    <string name="barToSeparet">/</string>
+    <string name="titleBalanceClient">Saldo</string>
+    <string name="titleRecyclerListOfRecents">Recentes</string>
+    <string name="contentDescriptionImageLogout">Clique para sair da interface do usuario, movimento financeiro.</string>
 </resources>

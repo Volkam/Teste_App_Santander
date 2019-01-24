@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@android:color/white"
-    tools:context=".MainActivity">
+    tools:context=".ActivityLoginApp">
 
     <ImageView
         android:id="@+id/iv_main_logo"
@@ -50,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="215dp"
         android:textColorHint="@color/colorFontForm"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login_to_user_interface"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -68,7 +67,7 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_login_to_user_interface"
         android:layout_width="202dp"
         android:layout_height="62dp"
         android:layout_marginStart="8dp"

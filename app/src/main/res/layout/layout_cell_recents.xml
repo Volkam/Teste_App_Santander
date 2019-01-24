@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="2dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/type_trasaction"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="19dp"
+            android:textColor="@color/colorFontCellFix"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/name_trasaction"
+            app:layout_constraintEnd_toStartOf="@+id/data_trasaction"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Pagamento" />
+
+        <TextView
+            android:id="@+id/data_trasaction"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="14dp"
+            android:textColor="@color/colorFontCellFix"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/value_trasaction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="12/12/2018" />
+
+        <TextView
+            android:id="@+id/name_trasaction"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/colorFontCellDown"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/value_trasaction"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/type_trasaction"
+            tools:text="Conta de Luz" />
+
+        <TextView
+            android:id="@+id/value_trasaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/colorFontCellDown"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_trasaction"
+            tools:text="R$ 1.000,00" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
